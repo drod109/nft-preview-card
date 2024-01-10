@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Project Screenshot](https://i.postimg.cc/WpwxYBL9/Screenshot-2024-01-10-174625.png)
 
 ### Links
 
@@ -38,7 +38,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- JavaScript
 - Mobile-first workflow
 
 ### Useful resources
