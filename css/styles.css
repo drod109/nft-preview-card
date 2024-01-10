@@ -57,6 +57,16 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+a {
+    font: inherit !important;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: var(--clr-cyan);
+}
+
+/* Card Styling */
 .card {
     background-color: var(--card-bg-clr);
     padding: var(--spacing-medium);
@@ -68,6 +78,26 @@ picture img {
     height: auto;
     border-radius: var(--border-radius-xsm);
 }
+picture a {
+    display: block;
+    position: relative;
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+}
+picture a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+  }
+  picture a:hover::after {
+    opacity: 0.5;
+    background-color: var(--clr-cyan);
+  }
 .card-header {
     color: var(--white);
     font-weight: var(--fw-medium);
@@ -121,4 +151,5 @@ picture img {
 }
 .author a:hover {
     color: var(--clr-cyan);
+    transition: color 0.6s ease;
 }
