@@ -1,0 +1,124 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Document reset */
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable declarations */
+:root {
+    /* Color Scheme */
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+    --main-bg-clr: hsl(217, 54%, 11%);
+    --card-bg-clr: hsl(216, 50%, 16%);
+    --line-clr: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font Sizes */
+    --font-large: 3rem;
+    --font-medium: 1.5rem;
+    --font-small: 1rem;
+    --font-xsmall: 0.7rem;
+
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    /* Spacings */
+    --spacing-small: 0.5erm;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-xlarage: 3rem;
+
+    /* Border Radius */
+    --border-radius-xsm: 0.5rem;
+    --border-radius-sm: 1rem;
+    --border-radius-med: 1.5rem;
+    --border-radius-lg: 2rem;
+
+}
+html {
+    font-family: 'Outfit', sans-serif, system-ui;
+    font-size: 16px;
+}
+body {
+    background: var(--main-bg-clr);
+    color: var(--clr-soft-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    background-color: var(--card-bg-clr);
+    padding: var(--spacing-medium);
+    max-width: 20rem;
+    border-radius: var(--border-radius-sm);
+}
+picture img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-xsm);
+}
+.card-header {
+    color: var(--white);
+    font-weight: var(--fw-medium);
+    font-size: var(--font-medium);
+    padding: var(--spacing-medium) 0;
+}
+.card-msg {
+    padding-bottom: var(--spacing-medium);
+    font-weight: var(--fw-medium);
+    
+}
+.auction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.auction-price {
+    color: var(--clr-cyan);
+}
+.auction-details img {
+    margin-right: 0.225rem;
+}
+.line {
+    background-color: var(--line-clr);
+    margin: var(--spacing-medium) 0;
+    height: 1px;
+    width: 100%;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+}
+.avatar img {
+    width: 2.188rem;
+    height: 2.188rem;
+    outline: 1px solid var(--white);
+    border-radius: 100%;
+}
+.avatar-profile {
+    color: var(--white);
+}
+.author {
+    font-size: var(--font-xsmall);
+}
+.author a {
+    text-decoration: none;
+    color: inherit;
+}
+.author a:hover {
+    color: var(--clr-cyan);
+}
