@@ -85,6 +85,7 @@ picture a {
     position: relative;
     border-radius: var(--border-radius-sm);
     overflow: hidden;
+    cursor: pointer;
 }
 picture a::after {
     content: '';
@@ -95,11 +96,27 @@ picture a::after {
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
-  }
-  picture a:hover::after {
+}
+picture a:hover::after {
     opacity: 0.5;
     background-color: var(--clr-cyan);
-  }
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    background-color: var(--clr-cyan);
+    width: 287px;
+    height: 285px;
+    border-radius: var(--border-radius-sm);
+    top: 235px;
+ }
+.icon:hover {
+    opacity: .5;
+    cursor: pointer;
+ }
 .card-header {
     color: var(--white);
     font-weight: var(--fw-medium);
