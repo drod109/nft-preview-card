@@ -108,10 +108,10 @@ picture a:hover::after {
     position: absolute;
     opacity: 0;
     background-color: var(--clr-cyan);
-    width: 287px;
-    height: 290px;
     border-radius: var(--border-radius-sm);
-    top: 288px;;
+    top: 0px;
+    left: 0px;
+    transition: background-color 0.3s ease;
  }
 .icon:hover {
     opacity: .5;
@@ -144,7 +144,7 @@ picture a:hover::after {
 .line {
     background-color: var(--line-clr);
     margin: var(--spacing-medium) 0;
-    height: 1px;
+    height: 0.063px;
     width: 100%;
 }
 .avatar {
@@ -155,7 +155,7 @@ picture a:hover::after {
 .avatar img {
     width: 2.188rem;
     height: 2.188rem;
-    outline: 1px solid var(--white);
+    outline: 0.063px solid var(--white);
     border-radius: 100%;
 }
 .avatar-profile {
