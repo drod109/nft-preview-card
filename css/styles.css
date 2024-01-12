@@ -111,7 +111,7 @@ picture a:hover::after {
     width: 287px;
     height: 290px;
     border-radius: var(--border-radius-sm);
-    top: 235px;;
+    top: 288px;;
  }
 .icon:hover {
     opacity: .5;
