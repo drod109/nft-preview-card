@@ -109,8 +109,11 @@ picture a:hover::after {
     opacity: 0;
     background-color: var(--clr-cyan);
     border-radius: var(--border-radius-sm);
-    top: 0px;
-    left: 0px;
+    width: 18.313rem;
+    height: 18.063rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icon */
     transition: background-color 0.3s ease;
  }
 .icon:hover {
