@@ -109,9 +109,9 @@ picture a:hover::after {
     opacity: 0;
     background-color: var(--clr-cyan);
     width: 287px;
-    height: 285px;
+    height: 290px;
     border-radius: var(--border-radius-sm);
-    top: 235px;
+    top: 235px;;
  }
 .icon:hover {
     opacity: .5;
