@@ -110,7 +110,6 @@ div a::after {
 }
 div a:hover::after {
     opacity: 0.5;
-    background-color: var(--clr-cyan);
 }
 .icon {
     display: flex;
@@ -174,6 +173,7 @@ div a:hover::after {
 }
 .avatar-profile {
     color: var(--white);
+    display: inline-flex;
 }
 .author {
     font-size: var(--font-xsmall);
