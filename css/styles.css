@@ -56,6 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-height: 100svh;
 }
 a {
     font: inherit !important;
@@ -74,12 +75,6 @@ a:hover {
     max-width: 20rem;
     border-radius: var(--border-radius-sm);
 }
-/* picture img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius-xsm);
-} */
 .card-img {
     display: block;
     width: 300px;
