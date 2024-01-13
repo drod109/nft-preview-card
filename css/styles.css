@@ -74,12 +74,20 @@ a:hover {
     max-width: 20rem;
     border-radius: var(--border-radius-sm);
 }
-picture img {
+/* picture img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: var(--border-radius-xsm);
-}
+} */
+.card-img {
+    display: block;
+    width: 300px;
+    background: url('images/icon-view.svg') center center no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 10px;
+ }
 picture a {
     display: block;
     position: relative;
@@ -109,9 +117,9 @@ picture a:hover::after {
     opacity: 0;
     background-color: var(--clr-cyan);
     border-radius: var(--border-radius-sm);
-    width: 18.313rem;
-    height: 18.063rem;
-    top: 40%;
+    width: 288px;
+    height: 301px;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the icon */
     transition: background-color 0.3s ease;
@@ -119,7 +127,7 @@ picture a:hover::after {
 .icon:hover {
     opacity: .5;
     cursor: pointer;
- }
+ } 
 .card-header {
     color: var(--white);
     font-weight: var(--fw-medium);
