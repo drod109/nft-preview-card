@@ -88,14 +88,17 @@ a:hover {
     margin: auto;
     border-radius: 10px;
  }
-picture a {
+ .wrapper {
+    position: relative;
+ }
+div a {
     display: block;
     position: relative;
     border-radius: var(--border-radius-sm);
     overflow: hidden;
     cursor: pointer;
 }
-picture a::after {
+div a::after {
     content: '';
     position: absolute;
     top: 0;
@@ -105,7 +108,7 @@ picture a::after {
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
 }
-picture a:hover::after {
+div a:hover::after {
     opacity: 0.5;
     background-color: var(--clr-cyan);
 }
@@ -119,7 +122,7 @@ picture a:hover::after {
     border-radius: var(--border-radius-sm);
     width: 288px;
     height: 301px;
-    top: 37%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the icon */
     transition: background-color 0.3s ease;
